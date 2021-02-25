@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="debug"></div>
+    <script>
+      fetch("j.json")
+        .then(response => response.json())
+        .then(data => { document.querySelector("#debug").innerText = data.sentence})
+    </script>
+  </body>
+</html>
